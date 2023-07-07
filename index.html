@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter city name Here..." id="input-box">
+                <button class="fa-solid fa-magnifying-glass" id="btn"></button>
+            </div>
+        </div>
+
+        <div class="weather-body">
+            <img src="./images/download-removebg-preview.png" alt="" id="weather-img">
+
+            <div class="weather-box">
+                <h2 id="city">City Name<h2>
+                <h3 id="tem">0°C</h3>
+                <p id="description">Light Rain</p>
+            </div>
+        
+
+          <div class="weather-details">
+               <div class="humidity">
+                  <i class="fa-solid fa-droplet"></i>
+                  <div class="text">
+                    <h5 id="humid">42°C</h5>
+                    <h6>Humidity</h6>
+                   </div>
+                </div>
+                <div class="Wind-Speed">
+                    <i class="fa-solid fa-wind"></i> 
+                    <div class="text">
+                    <h5 id="Wind">80 kph</h5>
+                    <h6>Wind-speed</h6>
+                   </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

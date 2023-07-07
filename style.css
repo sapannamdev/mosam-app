@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    /* background-image: url('https:/source.unsplash.com/random/?weather season'); */
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 380px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 25px;
+  
+}
+
+.search-box input {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    background-color: whitesmoke;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.search-box input::placeholder{
+     color: black;
+}
+
+.search-box button{
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover{
+    color: #fff;
+    background-color: black;
+}
+.weather-body{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+.weather-body img{
+    width: 220px;
+    height: 100px;
+    /* margin-top: 10px */
+
+}
+
+.weather-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#city{
+    font-size: 22px;
+    font-weight: 700;
+    margin-block: 15px;
+
+}
+#tem{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#description{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.weather-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin-block: 15px;
+}
+.weather-details .humidity,.Wind-Speed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-details i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.weather-details text{
+    font-size: 16px;
+}
